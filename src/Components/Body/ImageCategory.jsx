@@ -21,6 +21,7 @@ export class ImageCategory extends Component {
     });
     return (
       <div>
+        <h1 style={{width: "100%", textAlign: "center", padding: "10px", borderBottom: "2px solid black"}}>Albums</h1>
         <div className="categories">{category}</div>
       </div>
     );

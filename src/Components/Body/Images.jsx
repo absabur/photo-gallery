@@ -61,10 +61,10 @@ const Images = (props) => {
             padding: "5px",
             fontSize: "20px",
             margin: "1rem auto",
-            border: "1px solid black",
-            outline: "none",
             borderRadius: "5px",
-            background: "rgba(22, 129, 120, 0.4)",
+            background: "rgba(0, 89, 126, 0.4)",
+            border: "none",
+            boxShadow: "0 0 3px black",
           }}
           placeholder="Search Image"
           type="text"
