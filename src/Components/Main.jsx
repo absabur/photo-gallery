@@ -40,6 +40,7 @@ export class Main extends Component {
       <div>
         <BrowserRouter>
           <Header />
+          <div style={{height:"80px"}}></div>
           {this.state.loaded && (
             <Routes>
               <Route path="*" element={<Navigate replace to="/" />} />

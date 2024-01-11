@@ -52,7 +52,7 @@ const Images = (props) => {
     });
   return (
     <div className="images">
-      <Link className="back-button" style={{ top: "-65px" }} to="/">
+      <Link className="back-button" to="/">
         <i className="fa-solid fa-arrow-left fa-2x"></i>
       </Link>
       <div className="container w-100 d-flex flex">

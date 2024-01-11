@@ -28,6 +28,8 @@ const Header = (props) => {
         alignItems: "center",
         justifyContent: "space-around",
         width: "100%",
+        position: "fixed",
+        zIndex:"9"
       }}
     >
       <a
