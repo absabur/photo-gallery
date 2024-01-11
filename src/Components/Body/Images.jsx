@@ -15,7 +15,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 const Images = (props) => {
-  const [FilterdCountry, setFilterdCountry] = useState();
+  const [FilterdCountry, setFilterdCountry] = useState([]);
   let { category } = useParams();
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Images = (props) => {
   useEffect(() => {
     if (props.categoryImages !== null) {
       setFilterdCountry(
-        props.categoryImages.sort((a, b) => a.name.localeCompare(b.name))
+        props.categoryImages
       );
     }
   }, [props.categoryImages]);
@@ -38,7 +38,7 @@ const Images = (props) => {
         const countryName = country.name.toLowerCase();
         return countryName.startsWith(value);
       });
-    setFilterdCountry(newCountry.sort((a, b) => a.name.localeCompare(b.name)));
+    setFilterdCountry(newCountry);
   };
   let imageElement =
     FilterdCountry &&
