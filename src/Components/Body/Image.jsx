@@ -138,7 +138,7 @@ const Image = (props) => {
               }}
               onSubmit={handleSubmit}
             >
-              <h1>Feedback</h1>
+              <h1>Write Feedback</h1>
 
               <input
                 className="form-control"
