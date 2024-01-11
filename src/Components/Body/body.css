@@ -69,7 +69,7 @@
 }
 
 .images {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,17 +123,17 @@
 }
 
 .image-name{
-    
   text-align: center;
   background-color: rgba(174, 255, 0, 0.4);
   padding: 5px 10px;
   border-radius: 5px;
   box-shadow: 0 0 2px black;
   color: black;
+  margin-top: 1rem;
 }
 
 .full-image {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;

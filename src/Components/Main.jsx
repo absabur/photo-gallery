@@ -40,27 +40,22 @@ export class Main extends Component {
       <div>
         <BrowserRouter>
           <Header />
-          <div style={{height:"80px"}}></div>
-          {this.state.loaded && (
-            <Routes>
-              <Route path="*" element={<Navigate replace to="/" />} />
-              <Route
-                path="/"
-                element={<Navigate replace to="/gallery" />}
-              />
-              <Route
-                path="/gallery"
-                element={<ImageCategory images={this.props.images} />}
-              />
-              <Route path="/gallery/:category" element={<Images />} />
-              <Route path="/gallery/:category/:id" element={<Image />} />
-            </Routes>
-          )}
-
-          <Modal
-            isOpen={this.props.loginPage}
-            style={{ height: "100vh", width: "100vw" }}
-          >
+          <div style={{ height: "80px" }}></div>
+          <div className="container">
+            {this.state.loaded && (
+              <Routes>
+                <Route path="*" element={<Navigate replace to="/" />} />
+                <Route path="/" element={<Navigate replace to="/gallery" />} />
+                <Route
+                  path="/gallery"
+                  element={<ImageCategory images={this.props.images} />}
+                />
+                <Route path="/gallery/:category" element={<Images />} />
+                <Route path="/gallery/:category/:id" element={<Image />} />
+              </Routes>
+            )}
+          </div>
+          <Modal isOpen={this.props.loginPage}>
             <ModalHeader
               style={{ background: "red", color: "white", cursor: "pointer" }}
               onClick={() => this.props.loginPageToggle(false)}
@@ -68,10 +63,11 @@ export class Main extends Component {
               Close
             </ModalHeader>
             {this.props.warnMessage !== null && (
-              <Alert style={{margin: "0"}} color="warning">{this.props.warnMessage}</Alert>
+              <Alert style={{ margin: "0" }} color="warning">
+                {this.props.warnMessage}
+              </Alert>
             )}
-            {this.props.isLoading ? <LoadingPage /> :<LoginSignup />}
-            
+            {this.props.isLoading ? <LoadingPage /> : <LoginSignup />}
           </Modal>
         </BrowserRouter>
       </div>

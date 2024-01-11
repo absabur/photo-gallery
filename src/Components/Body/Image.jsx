@@ -115,7 +115,7 @@ const Image = (props) => {
             )}
           </div>
           {props.image.area && (
-            <div className="more-details container">
+            <div className="more-details">
               <h3>More Deatils</h3>
               <div className="more-details">
                 <p>Area: {props.image.area} Square Kilo Meter</p>

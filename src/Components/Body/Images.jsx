@@ -55,7 +55,7 @@ const Images = (props) => {
       <Link className="back-button" to="/">
         <i className="fa-solid fa-arrow-left fa-2x"></i>
       </Link>
-      <div className="container w-100 d-flex flex">
+      <div className="w-100 d-flex flex">
         <input
           style={{
             padding: "5px",
