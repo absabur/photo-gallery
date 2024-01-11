@@ -160,7 +160,7 @@ const Image = (props) => {
               ></textarea>
               <br />
               <button className="form-control btn btn-primary" type="submit">
-                sub
+                Submit
               </button>
             </form>
             <div className="show-feedback p-4" style={{ flex: "2" }}>
@@ -191,7 +191,7 @@ const Image = (props) => {
                     </div>
                     <hr style={{ color: "red" }} />
                     <p style={{ textAlign: "justify", marginTop: "1rem" }}>
-                      Comment: {item.comment}
+                      <span style={{fontWeight: 'bolder'}}>Comment:</span> {item.comment}
                     </p>
                   </div>
                 ))
