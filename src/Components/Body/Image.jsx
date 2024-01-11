@@ -91,7 +91,13 @@ const Image = (props) => {
                 <i className="fa-solid fa-angle-left fa-2x"></i>
               </p>
             )}
-            <img src={props.image.image} alt={props.image.name} />
+            <img
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.3)",
+              }}
+              src={props.image.image}
+              alt={props.image.name}
+            />
             {props.categoryImages.length > props.image.id ? (
               <Link
                 className="active-button right-button"
@@ -112,7 +118,11 @@ const Image = (props) => {
               <div className="more-details">
                 <p>Area: {props.image.area} Square Kilo Meter</p>
                 <p>Capital: {props.image.capital[0]}</p>
-                <p>Population: {(parseInt(props.image.population)/1000000).toFixed(2)} Million</p>
+                <p>
+                  Population:{" "}
+                  {(parseInt(props.image.population) / 1000000).toFixed(2)}{" "}
+                  Million
+                </p>
               </div>
             </div>
           )}
@@ -191,7 +201,8 @@ const Image = (props) => {
                     </div>
                     <hr style={{ color: "red" }} />
                     <p style={{ textAlign: "justify", marginTop: "1rem" }}>
-                      <span style={{fontWeight: 'bolder'}}>Comment:</span> {item.comment}
+                      <span style={{ fontWeight: "bolder" }}>Comment:</span>{" "}
+                      {item.comment}
                     </p>
                   </div>
                 ))
