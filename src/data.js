@@ -1,4 +1,36 @@
 export const images = {
+  cars: [
+    {
+      id: 1,
+      name: "Forbes",
+      image:
+        "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960",
+    },
+    {
+      id: 2,
+      name: "Bugatti",
+      image:
+        "https://cdn.motor1.com/images/mgl/mrz1e/s1/4x3/coolest-cars-feature.webp",
+    },
+    {
+      id: 3,
+      name: "Rolls Royce",
+      image:
+        "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rolls_royce_phantom_top_10.jpg?itok=XjL9f1tx",
+    },
+    {
+      id: 4,
+      name: "Tesla",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU",
+    },
+    {
+      id: 5,
+      name: "Luxury Car",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4M9KI_4aRw3oCydWnNUuQKfvC_yfStPzhoA&usqp=CAU",
+    }
+  ],
   cities: [
     {
       id: 1,
@@ -1886,36 +1918,56 @@ export const images = {
       area: 322463,
     },
   ],
-  cars: [
+  billionaires: [
     {
       id: 1,
-      name: "Forbes",
-      image:
-        "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960",
+      name: "Elon Musk",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003004/elon-musk-1536x864.jpeg"
     },
     {
       id: 2,
-      name: "Bugatti",
-      image:
-        "https://cdn.motor1.com/images/mgl/mrz1e/s1/4x3/coolest-cars-feature.webp",
+      name: "Bernard Arnault",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003015/bernard-arnault-1536x864.jpeg"
     },
     {
       id: 3,
-      name: "Rolls Royce",
-      image:
-        "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rolls_royce_phantom_top_10.jpg?itok=XjL9f1tx",
+      name: "Jeff Bezos",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003024/jeff-bezos-1536x864.jpeg",
     },
     {
       id: 4,
-      name: "Tesla",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU",
+      name: "Larry Ellison",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003032/larry-ellison-1536x864.jpeg",
     },
     {
       id: 5,
-      name: "Luxury Car",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4M9KI_4aRw3oCydWnNUuQKfvC_yfStPzhoA&usqp=CAU",
-    }
+      name: "Mark Zuckerberg",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003041/mark-zuckerberg-1536x864.jpeg",
+    },
+    {
+      id: 6,
+      name: "Warren Buffett",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003049/warren-buffett-1536x864.jpeg",
+    },
+    {
+      id: 7,
+      name: "Bill Gates",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003058/bill-gates.jpeg",
+    },
+    {
+      id: 8,
+      name: "Larry Page",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003105/larry-page.jpeg",
+    },
+    {
+      id: 9,
+      name: "Sergey Brin",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003112/sergey-brin-1536x864.jpeg",
+    },
+    {
+      id: 10,
+      name: "Steve Ballmer",
+      image: "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2024/01/05003120/steve-ballmer-1536x864.jpeg",
+    },
   ],
 };
