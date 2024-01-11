@@ -55,7 +55,7 @@ export const images = {
         "https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg",
     },
   ],
-  countries: [
+  flags: [
     {
       id: 1,
       name: "Christmas Island",
