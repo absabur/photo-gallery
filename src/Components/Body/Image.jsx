@@ -76,8 +76,10 @@ const Image = (props) => {
       <Link className="back-button" to={`/gallery/${category}`}>
         <i className="fa-solid fa-arrow-left fa-2x"></i>
       </Link>
+
       {props.image && (
         <>
+          <h3 className="image-name">Photo: {props.image.name}</h3>
           <div className="full-image">
             {props.image.id !== 1 ? (
               <Link
@@ -91,6 +93,7 @@ const Image = (props) => {
                 <i className="fa-solid fa-angle-left fa-2x"></i>
               </p>
             )}
+
             <img
               style={{
                 backgroundColor: "rgba(0, 0, 0, 0.3)",
@@ -111,7 +114,6 @@ const Image = (props) => {
               </p>
             )}
           </div>
-          <h3 className="image-name">Photo: {props.image.name}</h3>
           {props.image.area && (
             <div className="more-details container">
               <h3>More Deatils</h3>
