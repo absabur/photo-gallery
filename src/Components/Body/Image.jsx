@@ -112,7 +112,7 @@ const Image = (props) => {
               <div className="more-details">
                 <p>Area: {props.image.area} Square Kilo Meter</p>
                 <p>Capital: {props.image.capital[0]}</p>
-                <p>Population: {props.image.population}</p>
+                <p>Population: {(parseInt(props.image.population)/1000000).toFixed(2)} Million</p>
               </div>
             </div>
           )}
