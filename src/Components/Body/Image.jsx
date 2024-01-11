@@ -34,7 +34,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 const Image = (props) => {
-  const [fullImg, setfullImg] = useState("")
+  const [fullImg, setfullImg] = useState("");
   const [name, setName] = useState("");
   const [feedback, setFeedback] = useState("");
   let { category, id } = useParams();
@@ -64,7 +64,7 @@ const Image = (props) => {
     } else {
       props.submitFeedback(category + id, name, feedback);
     }
-  };  
+  };
 
   const submitted = () => {
     props.getFeedback(category + id);
@@ -77,14 +77,45 @@ const Image = (props) => {
       <Link className="back-button" to={`/gallery/${category}`}>
         <i className="fa-solid fa-arrow-left fa-2x"></i>
       </Link>
-      {
-        fullImg.length > 0 && (
-          <div style={{ position: "fixed",zIndex: "12", width: "100vw", height: "100vh", top: 0, left: 0, background: "black", display: "flex", flexDirection: "column"}}>
-            <h1 style={{cursor: "pointer", background:"white", textAlign:"center", width: "100%", padding:"10px"}} onClick={()=> setfullImg("")}>Close</h1>
-            <img style={{ margin: "auto", width: "100%", height: "100%", objectFit:"contain", background: "black"}} src={fullImg} alt="fullImg" />
-          </div>
-        )
-      }
+      {fullImg.length > 0 && (
+        <div
+          style={{
+            position: "fixed",
+            zIndex: "12",
+            width: "100vw",
+            height: "100vh",
+            top: 0,
+            left: 0,
+            background: "black",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <h1
+            style={{
+              cursor: "pointer",
+              background: "white",
+              textAlign: "center",
+              width: "100%",
+              padding: "10px",
+            }}
+            onClick={() => setfullImg("")}
+          >
+            Close
+          </h1>
+          <img
+            style={{
+              margin: "auto",
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              background: "black",
+            }}
+            src={fullImg}
+            alt="fullImg"
+          />
+        </div>
+      )}
 
       {props.image && (
         <>
@@ -104,9 +135,10 @@ const Image = (props) => {
             )}
 
             <img
-            onClick={()=> setfullImg(props.image.image)}
+              onClick={() => setfullImg(props.image.image)}
               style={{
                 backgroundColor: "rgba(0, 0, 0, 0.3)",
+                cursor: "pointer",
               }}
               src={props.image.image}
               alt={props.image.name}
