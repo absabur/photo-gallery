@@ -1886,4 +1886,36 @@ export const images = {
       area: 322463,
     },
   ],
+  cars: [
+    {
+      id: 1,
+      name: "Forbes",
+      image:
+        "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960",
+    },
+    {
+      id: 2,
+      name: "Bugatti",
+      image:
+        "https://cdn.motor1.com/images/mgl/mrz1e/s1/4x3/coolest-cars-feature.webp",
+    },
+    {
+      id: 3,
+      name: "Rolls Royce",
+      image:
+        "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rolls_royce_phantom_top_10.jpg?itok=XjL9f1tx",
+    },
+    {
+      id: 4,
+      name: "Tesla",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU",
+    },
+    {
+      id: 5,
+      name: "Luxury Car",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4M9KI_4aRw3oCydWnNUuQKfvC_yfStPzhoA&usqp=CAU",
+    }
+  ],
 };
