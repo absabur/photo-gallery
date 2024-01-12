@@ -34,6 +34,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 const Image = (props) => {
+  const [back, setBack] = useState(true)
   const [fullImg, setfullImg] = useState("");
   const [name, setName] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -98,18 +99,22 @@ const Image = (props) => {
               textAlign: "center",
               width: "100%",
               padding: "10px",
+              color: "red",
+              border:"1px solid red",
             }}
             onClick={() => setfullImg("")}
           >
             Close
           </h1>
           <img
+          onClick={()=> setBack(!back)}
             style={{
               margin: "auto",
               width: "100%",
               height: "100%",
               objectFit: "contain",
-              background: "black",
+              background: back ? "black" : "white",
+              cursor: "pointer",
             }}
             src={fullImg}
             alt="fullImg"

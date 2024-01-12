@@ -56,12 +56,21 @@ export class Main extends Component {
             )}
           </div>
           <Modal isOpen={this.props.loginPage}>
-            <ModalHeader
-              style={{ background: "red", color: "white", cursor: "pointer" }}
+            <h1
+              style={{
+                cursor: "pointer",
+                background: "white",
+                color: "red",
+                textAlign: "center",
+                width: "100%",
+                padding: "10px",
+                border:"1px solid red",
+                margin: "0",
+              }}
               onClick={() => this.props.loginPageToggle(false)}
             >
               Close
-            </ModalHeader>
+            </h1>
             {this.props.warnMessage !== null && (
               <Alert style={{ margin: "0" }} color="warning">
                 {this.props.warnMessage}
